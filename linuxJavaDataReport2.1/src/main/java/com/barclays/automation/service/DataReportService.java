@@ -82,9 +82,11 @@ public class DataReportService {
 		dataReportObj.setVendor(getStringValue(row.getCell(23)));
 		dataReportObj.setEmbeddedType(getStringValue(row.getCell(24)));
 		dataReportObj.setJavaClass2(getStringValue(row.getCell(25)));
-		dataReportObj.setSuspectedLatestJavaVersion(getStringValue(row.getCell(26)));
-		dataReportObj.setComments(getStringValue(row.getCell(27)));
-		dataReportObj.setProposedDate(getDateValue(row.getCell(28)));
+		dataReportObj.setJavaRelease(getIntegerValue(row.getCell(26)));
+		dataReportObj.setJavaBuild(getIntegerValue(row.getCell(27)));
+		dataReportObj.setSuspectedLatestJavaVersion(getStringValue(row.getCell(28)));
+		dataReportObj.setComments(getStringValue(row.getCell(29)));
+		dataReportObj.setProposedDate(getDateValue(row.getCell(30)));
 		return dataReportObj;
 	}
 
